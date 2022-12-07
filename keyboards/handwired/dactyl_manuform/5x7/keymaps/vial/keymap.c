@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTL,   KC_A,    KC_S,    KC_D,   KC_F,   KC_G,   KC_G,
         KC_LEFT_SHIFT,      KC_Z,    KC_X,    KC_C,   KC_V,   KC_B, KC_GRAVE,
                                      KC_CAPS, KC_A, KC_RWIN, KC_RIGHT_ALT,
-                                     KC_PAGE_DOWN, KC_PAGE_UP, KC_END, KC_HOME,
+                                     KC_PAGE_DOWN, TT(_FN), KC_END, KC_HOME,
         // right hand
                                                 KC_BACKSPACE, KC_EQL,KC_MINS,KC_0,KC_9,KC_8,KC_7,
                                                   KC_BSLS,KC_P,KC_O,KC_I,KC_U,KC_Y,KC_RBRC,
@@ -31,5 +31,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                             KC_LEFT, KC_UP,    KC_SPACE,  KC_RGHT,
              KC_UP, KC_ENTER,
              KC_LEFT, KC_DOWN
-    )
+    ),
+
+    [_FN] = LAYOUT_5x7(
+        // left hand
+        _______,   KC_F1,     KC_F2,      KC_F3,    KC_F4,     KC_F5,    KC_F6,
+        _______,   _______,   _______,    KC_UP,    _______,   _______,  _______,
+        _______,   _______,   KC_LEFT,    KC_DOWN,  KC_RGHT,   _______,  QK_BOOT,
+        _______,   _______,   _______,   _______,   _______,   _______, _______,
+                                KC_MSTP,   KC_MPLY,   KC_MPRV,   KC_MNXT,  
+                                        _______, _______,
+                                        _______, _______,
+        // right hand
+                KC_F7,     KC_F8,     KC_F9,     KC_F10,    KC_F11,    KC_F12,    _______,
+                _______,   _______,   _______,   KC_UP,   _______,   _______,   _______,
+                _______,   _______,   KC_RIGHT,   KC_DOWN,   KC_LEFT,   _______,   _______,
+                _______,   _______,   _______,   _______,   _______,   _______,   _______,
+                                                _______,   _______,   _______,   _______,
+                _______, _______,
+                _______, _______
+    ),
 };
