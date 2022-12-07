@@ -17,9 +17,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#define USE_SERIAL
-
 #define MASTER_LEFT
 //#define MASTER_RIGHT
 
 //#define EE_HANDS
+#define VIAL_KEYBOARD_UID {0x5F, 0xCC, 0x01, 0xA9, 0x57, 0xDD, 0xDA, 0x17}
