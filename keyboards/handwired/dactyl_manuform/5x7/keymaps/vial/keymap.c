@@ -28,9 +28,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                   KC_BSLS,KC_P,KC_O,KC_I,KC_U,KC_Y,KC_RBRC,
                                                   KC_QUOT,KC_SCLN,KC_L,KC_K,KC_J,KC_H,KC_GRAVE,
                                              KC_RIGHT_SHIFT,KC_SLSH,KC_DOT,KC_COMM,KC_M,KC_N,KC_N,
-                                            KC_LEFT, _______,    KC_SPACE,  KC_RGHT,
-             KC_UP, KC_ENTER,
-             KC_LEFT, KC_DOWN
+                                            KC_RIGHT, KC_SPACE,    KC_LEFT,  KC_RGHT,
+             KC_DOWN, KC_UP,
+             KC_LEFT, KC_ENTER
     ),
 
     [_FN] = LAYOUT_5x7(
